@@ -1,0 +1,7 @@
+metric,denominator,n_num,n_den,unweighted_pct,weighted_pct,fay_brr_se_pp,ci95_low_pct,ci95_high_pct
+raw_occupation_code_change_diagnostic,"primary valid Dec-Dec, age 18-64 both endpoints",3824,6556,58.32824893227577,59.5555405411341,0.7360565056364495,58.112869790088176,60.99821129218304
+raw_definitely_cross_major_diagnostic,"primary valid Dec-Dec, age 18-64 both endpoints",2786,6556,42.4954240390482,43.608105546650954,0.7556058307678504,42.12711811834714,45.08909297495711
+different_jobid,"both JOBID present, age 18-64 both endpoints",905,5867,15.425259928413157,16.659535755219842,0.6492776338009355,15.38695159297046,17.93211991747013
+strict_occupation_changing_job_transition,"both JOBID present, age 18-64 both endpoints",664,5867,11.317538776205897,12.190471575545386,0.5097468053100517,11.191367837137065,13.189575313952467
+strict_definitely_cross_major_transition,"both JOBID present, age 18-64 both endpoints",527,5867,8.982444179307993,9.718780563705241,0.45594206531653125,8.825134115684172,10.612427011724973
+cross_major_share_among_strict_occ_changing_job_transitions,"strict occupation-changing job transitions, age 18-64 both endpoints",527,664,79.36746987951807,79.72440199279524,1.7024143931319975,76.38766978225506,83.0611342033325
