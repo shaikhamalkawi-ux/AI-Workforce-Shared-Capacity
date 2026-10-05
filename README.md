@@ -1,0 +1,55 @@
+# Shared-Capacity Constraints in AI Workforce Planning
+
+Reproducibility materials for the SEPS manuscript **“When Occupational Transition Plans Compete for the Same Job Openings: Shared-Capacity Constraints in AI Workforce Planning.”**
+
+**Repository author and maintainer:** Ghassan Malkawi  
+**ORCID:** https://orcid.org/0000-0002-5320-7561
+
+## What this repository contains
+
+This public repository contains publication-safe code, fixed analytical ledgers, machine-readable outputs, structural certificates, source-acquisition/hash rules, and aggregate longitudinal SIPP outputs used to support the manuscript.
+
+The repository supports the following reproducibility layers:
+
+- **System A route-semantics replay:** fixed 169-origin denominator, prespecified released Top-5/no-backfill edge set, BLS 2024–34 and 2025–35 model-relevant vectors, alternative route-menu outputs, and opening-access stress results.
+- **System A optimal-face and minimum-cut certificates:** portable code and machine-readable certificate outputs for the reported origin-side and destination-side structural diagnostics.
+- **Longitudinal SIPP public outputs:** aggregate annual mobility rates, Fay-BRR uncertainty outputs, set-valued System-A concordance outputs, receiving-destination support summaries, and the analysis script.
+- **System B documentation:** implementation notes for the reported structural controls. The row-level System-B graphs needed for a new longitudinal System-B concordance calculation are not included.
+
+## Important data boundary
+
+This repository **does not redistribute** raw SIPP microdata, upstream person-level analytical extracts, or event-level person records. It also does not redistribute the large DOL/Emsi Career Pathways source file.
+
+A full System-A route reconstruction requires reacquiring the public DOL/Emsi file `Emsi_dataset.csv` and verifying the exact SHA-256 recorded in [`docs/DATA_ACQUISITION.md`](docs/DATA_ACQUISITION.md).
+
+The public SIPP files in this repository are aggregate outputs only. Reproducing person-level SIPP steps requires the corresponding local public-use microdata/extract workflow; no person-level records are included here.
+
+## Repository structure
+
+- [`code/`](code/) — replay, verification, and longitudinal-analysis scripts.
+- [`data_public/`](data_public/) — publication-safe fixed ledgers and BLS vectors used by the public replay.
+- [`outputs/`](outputs/) — reported route-menu, certificate, and aggregate SIPP outputs.
+- [`figures/`](figures/) — note on figure provenance.
+- [`manifests/`](manifests/) — source/public-output integrity records.
+- [`docs/`](docs/) — acquisition rules, implementation notes, result summaries, and reproducibility-boundary documentation.
+- [`requirements.txt`](requirements.txt) — Python dependencies used by the supplied replay scripts.
+
+## Quick checks
+
+For the Phase-1 System-A route rebuild, first place the verified public source at `data_public/Emsi_dataset.csv` as described in `docs/DATA_ACQUISITION.md`, then run the corresponding replay/verification scripts. The large source is intentionally not stored here.
+
+The System-A certificate materials can be replayed from the bundled public ledgers using `code/systemA_phase23_portable.py`; the full all-vintage/all-rho origin-face table is regenerated locally rather than stored in the repository to keep the public tree compact. Run `code/verify_systemA_phase23.py` to compare the bundled reference outputs.
+
+The SIPP analysis script is supplied for transparency, but its person-level upstream inputs are intentionally absent from the public repository. Set `SIPP_LOCAL_DIR` to the local directory containing the verified public-use extracts before running it. The redistributed SIPP outputs are aggregate verification artifacts rather than a public microdata bundle.
+
+## Interpretation boundary
+
+The reported routability values are **structural planning-capacity ratios**, not worker-transition probabilities. BLS openings are used as planning-capacity proxies rather than reserved vacancies or training seats. Longitudinal SIPP evidence is a downstream observed-mobility boundary and is not treated as validation of the BLS capacity model or as evidence of causal AI displacement.
+
+## License and source terms
+
+Original repository code is released under the MIT License. Third-party/public-source data and derived artifacts remain subject to the terms and attribution requirements of their original sources; see [`LICENSE`](LICENSE) and the source documentation in [`docs/`](docs/).
+
+## Permanent link
+
+https://github.com/shaikhamalkawi-ux/AI-Workforce-Shared-Capacity
