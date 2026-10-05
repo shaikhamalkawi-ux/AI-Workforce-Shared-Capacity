@@ -1,0 +1,6 @@
+destination_soc,destination,public_occ_codes,strict_occ_job_n,strict_occ_job_weight,strict_cross_major_n,strict_cross_major_weight,strict_occ_job_weighted_share_pct,strict_cross_major_weighted_share_pct
+11-2022,Sales Managers,52,0,0.0,0,0.0,0.0,0.0
+43-1011,First-Line Supervisors of Office and Administrative Support Workers,5000,8,161998.4524746,7,146423.9452346,1.0875935725328048,1.2330383958937383
+43-3031,"Bookkeeping, Accounting, and Auditing Clerks",5120,5,113764.91051309998,4,106471.90221019999,0.7637726383418205,0.8966015995449189
+43-4081,"Hotel, Motel, and Resort Desk Clerks",5300,0,0.0,0,0.0,0.0,0.0
+43-6014,"Secretaries and Administrative Assistants, Except Legal, Medical, and Executive",5740,1,38259.843996,0,0.0,0.25686146861607645,0.0
