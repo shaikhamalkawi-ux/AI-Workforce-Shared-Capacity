@@ -1,0 +1,74 @@
+{
+  "status": "PHASE2_AUDIT_COMPLETE_EXCEPT_SYSTEM_B_ROW_LEVEL_PROVENANCE_HOLD",
+  "primary_definition": "Age 18-64 at both Dec endpoints; valid Phase-1 primary jobs; both JOBID present; strict mobility requires different JOBID plus different occupation; strict cross-major requires DEFINITELY_CROSS_MAJOR=1.",
+  "counts": {
+    "phase1_primary_all_ages_n": 7566,
+    "primary_age_both_18_64_n": 6556,
+    "both_jobid_age_both_n": 5867,
+    "strict_occ_job_n": 664,
+    "strict_cross_major_n": 527,
+    "strict_cross_major_weight": 11875051.5573741,
+    "mapped_strict_cross_major_to_661_both_ends_n": 349,
+    "systemA_necessary_origin_events_n": 146,
+    "systemA_possible_origin_events_n": 190,
+    "systemA_exact_origin_events_n": 111,
+    "systemA_any_route_events_n": 14
+  },
+  "same_jobid_recoding_audit_all_ages": {"same_jobid_n":5803,"same_jobid_changed_occ_n":2923,"same_jobid_definitely_cross_major_n":1965},
+  "rates": {
+    "raw_occupation_code_change_diagnostic": {"metric":"raw_occupation_code_change_diagnostic","denominator":"primary valid Dec-Dec, age 18-64 both endpoints","n_num":3824,"n_den":6556,"unweighted_pct":58.32824893227577,"weighted_pct":59.5555405411341,"fay_brr_se_pp":0.7360565056364495,"ci95_low_pct":58.112869790088176,"ci95_high_pct":60.99821129218304},
+    "raw_definitely_cross_major_diagnostic": {"metric":"raw_definitely_cross_major_diagnostic","denominator":"primary valid Dec-Dec, age 18-64 both endpoints","n_num":2786,"n_den":6556,"unweighted_pct":42.4954240390482,"weighted_pct":43.608105546650954,"fay_brr_se_pp":0.7556058307678504,"ci95_low_pct":42.12711811834714,"ci95_high_pct":45.08909297495711},
+    "different_jobid": {"metric":"different_jobid","denominator":"both JOBID present, age 18-64 both endpoints","n_num":905,"n_den":5867,"unweighted_pct":15.425259928413157,"weighted_pct":16.659535755219842,"fay_brr_se_pp":0.6492776338009355,"ci95_low_pct":15.38695159297046,"ci95_high_pct":17.93211991747013},
+    "strict_occupation_changing_job_transition": {"metric":"strict_occupation_changing_job_transition","denominator":"both JOBID present, age 18-64 both endpoints","n_num":664,"n_den":5867,"unweighted_pct":11.317538776205897,"weighted_pct":12.190471575545386,"fay_brr_se_pp":0.5097468053100517,"ci95_low_pct":11.191367837137065,"ci95_high_pct":13.189575313952467},
+    "strict_definitely_cross_major_transition": {"metric":"strict_definitely_cross_major_transition","denominator":"both JOBID present, age 18-64 both endpoints","n_num":527,"n_den":5867,"unweighted_pct":8.982444179307993,"weighted_pct":9.718780563705241,"fay_brr_se_pp":0.45594206531653125,"ci95_low_pct":8.825134115684172,"ci95_high_pct":10.612427011724973},
+    "cross_major_share_among_strict_occ_changing_job_transitions": {"metric":"cross_major_share_among_strict_occ_changing_job_transitions","denominator":"strict occupation-changing job transitions, age 18-64 both endpoints","n_num":527,"n_den":664,"unweighted_pct":79.36746987951807,"weighted_pct":79.72440199279524,"fay_brr_se_pp":1.7024143931319975,"ci95_low_pct":76.38766978225506,"ci95_high_pct":83.0611342033325}
+  },
+  "age_2024_only_sensitivity": {"primary_n":6610,"both_jobid_n":5912,"different_jobid_weighted_pct":16.88103886775643,"strict_occ_job_weighted_pct":12.426477272334626,"strict_cross_major_weighted_pct":9.863316328266226},
+  "systemA_concordance": {
+    "origin_conditioned_lower": {"endpoint":"origin_conditioned_lower","unweighted_num_n":8,"unweighted_den_n":180,"unweighted_pct":4.444444444444445,"weighted_numerator_mass":175945.5081639,"weighted_denominator_mass":4429328.279943401,"weighted_pct":3.9722842165618006,"fay_brr_se_pp":2.0198485207999877,"ci95_low_pct":0.013381115794649373,"ci95_high_pct":7.931187317330601},
+    "origin_conditioned_upper": {"endpoint":"origin_conditioned_upper","unweighted_num_n":14,"unweighted_den_n":148,"unweighted_pct":9.45945945945946,"weighted_numerator_mass":298273.0244507,"weighted_denominator_mass":3683889.494853,"weighted_pct":8.096687614203315,"fay_brr_se_pp":2.9340465260985793,"ci95_low_pct":2.34595642305385,"ci95_high_pct":13.847418805360281},
+    "exact_origin_lower": {"endpoint":"exact_origin_lower","unweighted_num_n":8,"unweighted_den_n":111,"unweighted_pct":7.207207207207207,"weighted_numerator_mass":175945.5081639,"weighted_denominator_mass":2938265.0206335,"weighted_pct":5.9880748308389675,"fay_brr_se_pp":3.041402204536404,"ci95_low_pct":0.02692650995000101,"ci95_high_pct":11.949223151732703},
+    "exact_origin_upper": {"endpoint":"exact_origin_upper","unweighted_num_n":12,"unweighted_den_n":111,"unweighted_pct":10.81081081081081,"weighted_numerator_mass":266588.5643029,"weighted_denominator_mass":2938265.0206335,"weighted_pct":9.072992477901893,"fay_brr_se_pp":3.578290936824417,"ci95_low_pct":2.0595422417278964,"ci95_high_pct":16.086442714079613}
+  },
+  "persistent_receiving_core": {
+    "by_destination": [
+      {"destination_soc":"11-2022","destination":"Sales Managers","public_occ_codes":"52","strict_occ_job_n":0,"strict_occ_job_weight":0.0,"strict_cross_major_n":0,"strict_cross_major_weight":0.0},
+      {"destination_soc":"43-1011","destination":"First-Line Supervisors of Office and Administrative Support Workers","public_occ_codes":"5000","strict_occ_job_n":8,"strict_occ_job_weight":161998.4524746,"strict_cross_major_n":7,"strict_cross_major_weight":146423.9452346},
+      {"destination_soc":"43-3031","destination":"Bookkeeping, Accounting, and Auditing Clerks","public_occ_codes":"5120","strict_occ_job_n":5,"strict_occ_job_weight":113764.91051309998,"strict_cross_major_n":4,"strict_cross_major_weight":106471.90221019999},
+      {"destination_soc":"43-4081","destination":"Hotel, Motel, and Resort Desk Clerks","public_occ_codes":"5300","strict_occ_job_n":0,"strict_occ_job_weight":0.0,"strict_cross_major_n":0,"strict_cross_major_weight":0.0},
+      {"destination_soc":"43-6014","destination":"Secretaries and Administrative Assistants, Except Legal, Medical, and Executive","public_occ_codes":"5740","strict_occ_job_n":1,"strict_occ_job_weight":38259.843996,"strict_cross_major_n":0,"strict_cross_major_weight":0.0}
+    ],
+    "totals": {"strict_occ_job_events_n":14,"strict_occ_job_weight":314023.2069837,"strict_occ_job_weighted_share_pct":2.108227679490702,"strict_cross_major_events_n":11,"strict_cross_major_weight":252895.84744479996,"strict_cross_major_weighted_share_pct":2.1296399954386573,"strict_cross_major_unweighted_share_pct":2.0872865275142316,"destinations_with_strict_cross_major_support":2}
+  },
+  "old_adjacent_month_locked_comparator": {
+    "all_cross_major_n":864,
+    "all_cross_major_weighted_mass":10841130.8,
+    "mappable_to_661_n":607,
+    "core_destination_events_n":18,
+    "core_destination_weighted_share_pct":1.64,
+    "core_destinations_observed_count":5,
+    "systemB_weighted_bounds_pct": {
+      "strict":{"origin_lower":0.1336,"origin_upper":2.6619,"exact_lower":0.2214,"exact_upper":0.4471},
+      "representative":{"origin_lower":0.6646,"origin_upper":6.6879,"exact_lower":1.1008,"exact_upper":2.9064},
+      "loose":{"origin_lower":2.1724,"origin_upper":11.8358,"exact_lower":3.5955,"exact_upper":6.438}
+    }
+  },
+  "systemA_replay_gate": {"rho":0.5,"reference_2024_34_independent_pct":83.64825581395351,"reference_2024_34_joint_pct":49.39599483204132,"reference_2024_34_gap_pp":34.25226098191221},
+  "systemB_longitudinal_status": {
+    "decision":"HOLD",
+    "reason":"Exact historical row-level System-B strict/representative/loose edge ledgers and exact 372-origin SOC list are not present in the compact current project reproduction. Rules and locked aggregate results are preserved, but rebuilding the graph now could change a locked design.",
+    "preserved_rules":{
+      "strict":"O*NET Primary-Short; education allowance 0 category; destination median wage >=100% of origin; retain source-directed relation",
+      "representative":"All Primary; education allowance +1 category; destination median wage >=90% of origin; retain source-directed relation",
+      "loose":"Primary + Supplemental; education allowance +2 categories; destination median wage >=80% of origin; retain source-directed relation"
+    },
+    "locked_edge_counts":{"strict":513,"representative":1658,"loose":3716},
+    "locked_destination_counts":{"strict":272,"representative":458,"loose":562}
+  },
+  "interpretation": {
+    "primary_sipp_layer":"Use one-year Dec-2023 to Dec-2024 strict different-JOBID longitudinal evidence as the primary SIPP layer.",
+    "adjacent_month_role":"Retain the old adjacent-month 2024-reference SIPP layer as short-horizon sensitivity/comparator.",
+    "systemA":"Longitudinal System-A route support is positive but sparse; treat as observed mobility triangulation/boundary evidence, not validation or causal confirmation.",
+    "receiving_core":"Aggregate weighted cross-major support to the five-core set is similar in scale to the old adjacent-month layer, but only two of five core destinations receive strict annual cross-major support; do not claim five-of-five longitudinal confirmation."
+  }
+}
