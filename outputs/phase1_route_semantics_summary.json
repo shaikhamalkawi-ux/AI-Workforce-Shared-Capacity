@@ -1,0 +1,23 @@
+{
+  "emsi_sha256": "29534756d3fbe234b0c89551b4c7407293d653cc4577ff567f0bbeb1e97eb2fb",
+  "emsi_rows": 256831,
+  "emsi_columns": 28,
+  "released_regression_gate": {"expected_edges":335,"reconstructed_edges":335,"exact_edge_set_match":true},
+  "route_menu_structure": [
+    {"menu":"released_no_backfill","edges":335,"origins_with_edge":146,"destinations":71},
+    {"menu":"conditioned_no_backfill","edges":522,"origins_with_edge":169,"destinations":75},
+    {"menu":"fully_joinable_backfill","edges":845,"origins_with_edge":169,"destinations":82}
+  ],
+  "rho050_results": [
+    {"supply_k":3096.0,"independent_k":2589.750000000001,"joint_k":1529.299999999999,"independent_pct":83.64825581395351,"joint_pct":49.39599483204132,"gap_pp":34.25226098191221,"competition_share_of_deficiency":0.6768685772643143,"vintage":"2024-34","menu":"released_no_backfill","rho":0.5},
+    {"supply_k":3096.0,"independent_k":2997.9500000000003,"joint_k":1947.4,"independent_pct":96.83301033591731,"joint_pct":62.900516795865634,"gap_pp":33.93249354005169,"competition_share_of_deficiency":0.9146352080794012,"vintage":"2024-34","menu":"conditioned_no_backfill","rho":0.5},
+    {"supply_k":3096.0,"independent_k":3096.0,"joint_k":2367.9,"independent_pct":100.0,"joint_pct":76.48255813953489,"gap_pp":23.517441860465112,"competition_share_of_deficiency":1.0,"vintage":"2024-34","menu":"fully_joinable_backfill","rho":0.5},
+    {"supply_k":2870.2,"independent_k":2374.099999999999,"joint_k":1427.7,"independent_pct":82.71549020974146,"joint_pct":49.742178245418444,"gap_pp":32.97331196432301,"competition_share_of_deficiency":0.656083188908145,"vintage":"2025-35","menu":"released_no_backfill","rho":0.5},
+    {"supply_k":2870.2,"independent_k":2761.399999999999,"joint_k":1817.95,"independent_pct":96.2093233920981,"joint_pct":63.338791721831235,"gap_pp":32.87053167026685,"competition_share_of_deficiency":0.896602518412924,"vintage":"2025-35","menu":"conditioned_no_backfill","rho":0.5},
+    {"supply_k":2870.2,"independent_k":2870.1999999999994,"joint_k":2200.4,"independent_pct":99.99999999999999,"joint_pct":76.663647132604,"gap_pp":23.336352867395977,"competition_share_of_deficiency":0.9999999999999993,"vintage":"2025-35","menu":"fully_joinable_backfill","rho":0.5}
+  ],
+  "claim_gate": {
+    "supported":"At rho=0.50, the competition gap remains material under all three declared System-A route menus in both BLS vintages.",
+    "not_supported":"The competition gap does not persist for every route menu at every rho; fully joinable/backfill reaches 100% joint routability by rho=0.75 in both vintages."
+  }
+}
