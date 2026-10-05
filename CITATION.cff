@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use these reproducibility materials, please cite the repository and the associated manuscript."
+title: "AI Workforce Shared Capacity: Reproducibility Materials"
+type: software
+authors:
+  - family-names: Malkawi
+    given-names: Ghassan
+    orcid: "https://orcid.org/0000-0002-5320-7561"
+repository-code: "https://github.com/shaikhamalkawi-ux/AI-Workforce-Shared-Capacity"
+url: "https://github.com/shaikhamalkawi-ux/AI-Workforce-Shared-Capacity"
+version: "1.0.0"
+date-released: 2026-10-06
+license: MIT
+keywords:
+  - workforce planning
+  - occupational mobility
+  - shared capacity
+  - maximum flow
+  - reproducibility
