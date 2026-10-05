@@ -1,0 +1,25 @@
+{
+  "analysis_date": "2026-09-01",
+  "frozen_emsi": {
+    "filename": "Emsi_dataset(1).csv",
+    "sha256": "29534756d3fbe234b0c89551b4c7407293d653cc4577ff567f0bbeb1e97eb2fb",
+    "rows": 256831,
+    "columns": 28,
+    "official_source": "https://www.dol.gov/agencies/oasp/evaluation/data-repo/career-pathways-da-data",
+    "role": "Frozen ranked route evidence; not nationally representative worker-flow microdata."
+  },
+  "bls_2024_34": {
+    "role": "Locked primary projection vintage; model-relevant transfer/opening vector bundled."
+  },
+  "bls_2025_35": {
+    "official_source": "https://www.bls.gov/emp/tables/occupational-separations-and-openings.htm",
+    "table": "Table 1.10 Occupational separations and openings, projected 2025-35",
+    "role": "Prospective out-of-time replacement of complete model-relevant transfer/opening vector.",
+    "model_relevant_socs": 206
+  },
+  "frozen_rules": {
+    "route_semantics": "DOL/Emsi released Top-5/no-backfill, common-frame, cross-major",
+    "denominator": "Baseline-positive occupations with any joinable cross-major DOL/Emsi support, including supported origins with no retained Top-5 edge.",
+    "rho_grid": [0.25,0.5,0.75,1.0]
+  }
+}
