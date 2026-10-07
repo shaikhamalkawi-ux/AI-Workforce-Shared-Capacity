@@ -1,6 +1,6 @@
 # Shared-Capacity Constraints in AI Workforce Planning
 
-Reproducibility materials for the SEPS manuscript **“When Occupational Transition Plans Compete for the Same Job Openings: Shared-Capacity Constraints in AI Workforce Planning.”**
+Reproducibility materials for the manuscript **“Shared-Capacity Constraints in Occupational Transition Networks for AI Workforce Planning.”**
 
 **Repository author and maintainer:** Ghassan Malkawi  
 **ORCID:** https://orcid.org/0000-0002-5320-7561
