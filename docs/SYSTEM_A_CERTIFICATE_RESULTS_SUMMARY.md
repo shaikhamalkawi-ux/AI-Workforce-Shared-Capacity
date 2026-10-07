@@ -1,6 +1,6 @@
-# Phase 2–3 scientific extension summary
+# Phase 2–3 System-A certificate results summary
 
-Status: **Verified structural-certificate summary for the accompanying manuscript.**
+Status: **Verified structural-certificate summary for the manuscript.**
 
 ## Frozen baseline
 This extension conditions on the fixed System-A baseline: 169 support-conditioned origins and the frozen 335-edge released Top-5/no-backfill graph. It does not reconstruct route semantics and does not change any baseline result.
