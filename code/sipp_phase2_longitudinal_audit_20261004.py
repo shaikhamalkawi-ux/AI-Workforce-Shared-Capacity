@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Phase-2 longitudinal SIPP audit for the AI Workforce shared-capacity journal paper.
 
-This script does not rebuild Phase 1. It consumes the locked Phase-1 person-transition
+This script does not rebuild the upstream person-transition construction. It consumes the retained person-transition
 file, replicate weights, conservative Census occupation-to-SOC candidate mapping, the
-661-SOC analytical frame, and frozen System-A route objects.
+661-SOC analytical frame, and prespecified System-A route objects.
 
 Primary annual worker-mobility definition:
   - primary job valid in Dec-2023 and Dec-2024 (Phase-1 rule),
@@ -330,7 +330,7 @@ def main():
     assert abs(rho05['joint_pct'] - 49.39599483204132) < 1e-10
 
     results = {
-        'status': 'PHASE2_AUDIT_COMPLETE_EXCEPT_SYSTEM_B_ROW_LEVEL_PROVENANCE_HOLD',
+        'status': 'PHASE2_AUDIT_COMPLETE_SYSTEM_B_ROW_LEVEL_OBJECTS_NOT_INCLUDED',
         'primary_definition': 'Age 18-64 at both Dec endpoints; valid Phase-1 primary jobs; both JOBID present; strict mobility requires different JOBID plus different occupation; strict cross-major requires DEFINITELY_CROSS_MAJOR=1.',
         'counts': {
             'phase1_primary_all_ages_n': int((t['PRIMARY_ANALYSIS_INCLUDED']==1).sum()),
@@ -358,8 +358,8 @@ def main():
             'reference_2024_34_gap_pp': rho05['gap_pp'],
         },
         'systemB_longitudinal_status': {
-            'decision': 'HOLD',
-            'reason': 'Exact historical row-level System-B strict/representative/loose edge ledgers and exact 372-origin SOC list are not present in the compact current project reproduction. Rules and locked aggregate results are preserved, but rebuilding the graph now could change a locked design.',
+            'decision': 'NOT_REPORTED',
+            'reason': 'The row-level System-B strict/representative/loose edge ledgers and exact 372-origin SOC list required for a design-identical longitudinal concordance calculation are not included in the publication-safe materials. Aggregate rules and reported structural results are documented; rebuilding from a different release would define a different analysis.',
             'preserved_rules': {
                 'strict': 'O*NET Primary-Short; education allowance 0 category; destination median wage >=100% of origin; retain source-directed relation',
                 'representative': 'All Primary; education allowance +1 category; destination median wage >=90% of origin; retain source-directed relation',
