@@ -1,4 +1,4 @@
-# METHOD LOCK — Phase 2 / Phase 3
+# System-A certificate method — Phase 2 / Phase 3
 
 ## Scientific scope
 This is an additive diagnostic extension of the frozen System-A baseline. It does not change the route graph, origin denominator, BLS vectors, rho grid, or any published baseline calculation.
