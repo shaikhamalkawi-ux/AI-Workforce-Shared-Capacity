@@ -7,7 +7,7 @@ Reproducibility materials for the manuscript **“Shared-Capacity Constraints in
 
 ## What this repository contains
 
-This public repository contains publication-safe code, fixed analytical ledgers, machine-readable outputs, structural certificates, source-acquisition/hash rules, and aggregate longitudinal SIPP outputs used to support the manuscript.
+This public repository contains publicly distributable code, fixed analytical ledgers, machine-readable outputs, structural certificates, source-acquisition/hash rules, and aggregate longitudinal SIPP outputs supporting the manuscript.
 
 The repository supports the following reproducibility layers:
 
@@ -27,20 +27,20 @@ The public SIPP files in this repository are aggregate outputs only. Reproducing
 ## Repository structure
 
 - [`code/`](code/) — replay, verification, and longitudinal-analysis scripts.
-- [`data_public/`](data_public/) — publication-safe fixed ledgers and BLS vectors used by the public replay.
+- [`data_public/`](data_public/) — fixed analytical ledgers and BLS vectors used by the public replay.
 - [`outputs/`](outputs/) — reported route-menu, certificate, and aggregate SIPP outputs.
 - [`figures/`](figures/) — note on figure provenance.
 - [`manifests/`](manifests/) — source/public-output integrity records.
 - [`docs/`](docs/) — acquisition rules, implementation notes, result summaries, and reproducibility-boundary documentation.
-- [`requirements.txt`](requirements.txt) — Python dependencies used by the supplied replay scripts.
+- [`requirements.txt`](requirements.txt) — Python dependencies used by the replay scripts.
 
 ## Quick checks
 
-For the Phase-1 System-A route rebuild, first place the verified public source at `data_public/Emsi_dataset.csv` as described in `docs/DATA_ACQUISITION.md`, then run the corresponding replay/verification scripts. The large source is intentionally not stored here.
+For a System-A route reconstruction, place the verified public source at `data_public/Emsi_dataset.csv` as described in `docs/DATA_ACQUISITION.md`, then run the route replay and verification scripts. The large source is intentionally not stored here.
 
 The System-A certificate materials can be replayed from the bundled public ledgers using `code/systemA_phase23_portable.py`. Key machine-readable reference certificates are stored as compressed CSV (`.csv.gz`) files, while additional all-vintage/all-rho outputs are regenerated locally. Run `code/verify_systemA_phase23.py` to compare the regenerated outputs with the bundled reference certificates.
 
-The SIPP analysis script is supplied for transparency, but its person-level upstream inputs are intentionally absent from the public repository. Set `SIPP_LOCAL_DIR` to the local directory containing the verified public-use extracts before running it. The redistributed SIPP outputs are aggregate verification artifacts rather than a public microdata bundle.
+The SIPP analysis script is provided for transparency, but its person-level upstream inputs are intentionally absent from the public repository. Set `SIPP_LOCAL_DIR` to the local directory containing the verified public-use extracts before running it. The redistributed SIPP outputs are aggregate verification artifacts rather than a public microdata bundle.
 
 ## Interpretation boundary
 
